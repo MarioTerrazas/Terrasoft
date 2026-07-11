@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Variables de entorno
+.env
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code (más adelante decidiremos si versionamos esta carpeta)
+.vscode/
+
+# Backups
+Backups/
