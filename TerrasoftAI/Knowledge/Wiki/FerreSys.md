@@ -6,35 +6,36 @@ Estado: En Diseño
 
 Proyecto: Terrasoft
 
+Última actualización: 13/07/2026
+
 ---
 
 # ¿Qué es FerreSys?
 
-FerreSys es un sistema ERP especializado para ferreterías.
+FerreSys es un ERP especializado para ferreterías.
 
-Su objetivo es digitalizar completamente la operación de una ferretería para que el propietario pueda administrar su negocio desde cualquier lugar, con mayor control, seguridad y eficiencia.
+Su objetivo es digitalizar completamente la operación de una ferretería para que el propietario pueda administrar su negocio desde cualquier lugar con mayor control, seguridad y eficiencia.
 
-FerreSys no nace para informatizar una empresa.
-
-Nace para resolver problemas reales que viven diariamente las pequeñas y medianas ferreterías.
+FerreSys nace para resolver problemas reales observados en pequeñas y medianas ferreterías.
 
 ---
 
 # Origen
 
-FerreSys surge a partir de un caso real.
+FerreSys surge a partir de una necesidad real.
 
-El propietario de una ferretería quedó administrando completamente su negocio después del fallecimiento de su esposa, quien era la encargada de la atención diaria.
+El propietario de una ferretería quedó administrando completamente su negocio después del fallecimiento de su esposa, quien era responsable de la atención diaria.
 
-Desde ese momento comenzaron a aparecer problemas como:
+A partir de ese momento comenzaron a aparecer problemas relacionados con:
 
 - Control del inventario.
 - Supervisión de empleados.
-- Coordinación de entregas.
+- Seguimiento de pedidos.
 - Atención de clientes.
-- Facturación.
+- Facturación electrónica.
 - Declaraciones tributarias.
-- Seguimiento del chofer.
+- Control del chofer.
+- Organización del negocio.
 
 Todo dependía únicamente del propietario.
 
@@ -50,94 +51,73 @@ Cuando el propietario no está presente:
 
 - disminuye el control,
 - aumenta el riesgo de pérdidas,
-- los pedidos se retrasan,
-- aparecen errores administrativos.
+- aparecen retrasos,
+- se generan errores administrativos.
 
-FerreSys busca eliminar esa dependencia.
+FerreSys busca eliminar esa dependencia mediante tecnología.
 
 ---
 
-# Nuestra misión
+# Misión
 
-Permitir que una ferretería funcione correctamente incluso cuando el propietario no se encuentre físicamente en el negocio.
+Permitir que una ferretería funcione correctamente incluso cuando el propietario no esté físicamente presente.
 
 ---
 
 # Objetivos
 
-FerreSys busca solucionar problemas reales como:
+FerreSys buscará resolver:
 
-- Control del inventario.
-- Gestión de clientes.
-- Evitar pérdida de clientes.
-- Control de ingresos y egresos.
-- Seguimiento de pedidos.
-- Seguimiento del chofer en tiempo real.
+- Inventario.
+- Clientes.
+- Pedidos.
 - Facturación electrónica.
 - Declaraciones tributarias.
+- Ingresos y egresos.
+- Control del chofer.
+- Seguimiento de entregas.
+- Reportes.
 - Administración desde cualquier lugar.
 
-Todo desde una sola plataforma.
+Todo desde una única plataforma.
 
 ---
 
-# Nuestro primer cliente
+# Primer cliente
 
-El primer cliente de FerreSys será una ferretería real.
+El primer cliente será una ferretería real.
 
-Esto permitirá validar el sistema utilizando necesidades reales antes de ofrecerlo a otros negocios.
-
----
-
-# Nuestra diferencia
-
-FerreSys no fue diseñado pensando en funciones.
-
-Fue diseñado pensando en resolver problemas.
-
-Cada módulo deberá justificar su existencia resolviendo una necesidad real del propietario.
-
----
-
-# Primera prioridad
-
-La prioridad del proyecto no será desarrollar todas las funciones posibles.
-
-La prioridad será resolver completamente los problemas del primer cliente.
-
-Cada nuevo módulo deberá aportar valor antes de continuar con el siguiente.
-
----
-
-# Visión
-
-En el futuro, cualquier propietario podrá administrar su ferretería desde un teléfono móvil.
-
-Podrá conocer:
-
-- qué se vendió,
-- quién compró,
-- dónde se encuentra el chofer,
-- cuánto dinero ingresó,
-- cuánto dinero salió,
-- cuál es el inventario disponible,
-
-sin necesidad de encontrarse físicamente en el negocio.
+El objetivo es validar cada módulo utilizando necesidades reales antes de comercializar el producto.
 
 ---
 
 # Filosofía
 
-FerreSys no pretende reemplazar al propietario.
+Cada módulo deberá existir únicamente si resuelve un problema real del cliente.
 
-Pretende darle herramientas para tomar mejores decisiones.
+No se desarrollarán funcionalidades innecesarias.
 
-Nuestro objetivo no es controlar personas.
+---
 
-Nuestro objetivo es dar tranquilidad mediante información confiable.
+# Visión
+
+En el futuro, cualquier propietario podrá administrar completamente su ferretería desde su teléfono móvil.
+
+Conocerá en tiempo real:
+
+- Inventario.
+- Ventas.
+- Compras.
+- Clientes.
+- Pedidos.
+- Ingresos.
+- Gastos.
+- Estado del chofer.
+
+Todo desde una sola aplicación.
 
 ---
 
 # Lema
 
-"Controla tu ferretería desde cualquier lugar."
+"Control total de tu ferretería."

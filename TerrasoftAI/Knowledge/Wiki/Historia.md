@@ -6,58 +6,53 @@ Estado: Activo
 
 Proyecto: Terrasoft
 
----
-
-# Introducción
-
-Este documento registra los acontecimientos más importantes en la historia de Terrasoft.
-
-No pretende sustituir al Diario de Desarrollo.
-
-Su objetivo es conservar únicamente los hitos que marcaron la evolución del ecosistema.
+Última actualización: 13/07/2026
 
 ---
 
 # Fundación
 
-Terrasoft fue fundado por Mario Eduardo Terrazas Parada con el propósito de desarrollar soluciones tecnológicas profesionales para empresas y personas.
+Terrasoft fue fundado por Mario Eduardo Terrazas Parada con el propósito de desarrollar soluciones tecnológicas profesionales para resolver problemas reales.
 
-Desde su creación se estableció como principio fundamental que el conocimiento debía pertenecer al proyecto y no depender únicamente de la memoria de las personas.
-
----
-
-# Primeros principios
-
-Durante los primeros días se definieron los pilares del ecosistema:
-
-- Documentar antes de programar.
-- Utilizar Git desde el primer día.
-- Registrar todas las decisiones importantes.
-- Desarrollar una Inteligencia Artificial propia como miembro del equipo.
-- Diseñar una arquitectura antes de escribir código.
+Desde el primer día se estableció que el conocimiento debía pertenecer al proyecto y quedar documentado.
 
 ---
 
-# Nacimiento de TerrasoftAI
+# Sprint 0 - Fundación
 
-Durante el Sprint 1 se instaló Ollama y se descargó el primer motor de inteligencia artificial.
+Durante el Sprint 0 se preparó el entorno profesional de desarrollo.
 
-Este momento marcó el nacimiento oficial de TerrasoftAI como asistente técnico del proyecto.
+Se instaló y configuró:
 
-TerrasoftAI fue concebido como un miembro del equipo y no simplemente como un modelo de lenguaje.
+- Git
+- GitHub
+- GitHub CLI
+- Python
+- Node.js
+- Visual Studio Code
+
+También se creó la estructura inicial del ecosistema Terrasoft y se realizó el primer commit del proyecto.
 
 ---
 
-# Primer producto
+# Sprint 1 - Nacimiento de TerrasoftAI
 
-El primer producto oficial del ecosistema será FerreSys.
+Durante el Sprint 1 se definieron los pilares del ecosistema.
 
-FerreSys nace con el objetivo de resolver los problemas de gestión de ferreterías mediante un sistema moderno, escalable e inteligente.
+Se creó la documentación oficial de Terrasoft.
+
+Se diseñó la arquitectura del conocimiento.
+
+Se instaló Ollama y se descargó el primer motor de inteligencia artificial (Qwen 2.5 7B).
+
+Se realizó la primera conversación con una IA ejecutándose completamente de forma local.
+
+TerrasoftAI nació oficialmente como asistente técnico del proyecto.
+
+También se definió FerreSys como el primer producto oficial del ecosistema.
 
 ---
 
-# Visión
+# Futuro
 
-Terrasoft aspira a construir múltiples soluciones tecnológicas reutilizando conocimiento, arquitectura y componentes compartidos entre proyectos.
-
-TerrasoftAI será el responsable de preservar ese conocimiento durante toda la vida del ecosistema.
+Terrasoft continuará desarrollando soluciones tecnológicas reutilizando conocimiento, arquitectura y componentes compartidos entre todos sus productos.
