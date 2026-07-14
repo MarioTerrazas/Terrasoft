@@ -40,21 +40,31 @@ Logros:
 
 ---
 
-# Sprint 2 - Arquitectura de FerreSys
+# Sprint 2 - Arquitectura de FerreSys 🚧
 
 Objetivo:
-Diseñar completamente FerreSys antes del desarrollo.
+Diseñar completamente FerreSys antes de comenzar el desarrollo.
 
-Pendiente:
-- [ ] Definir módulos.
-- [ ] Diseñar Base de Datos.
-- [ ] Casos de Uso.
-- [ ] Arquitectura Backend.
-- [ ] Arquitectura Frontend.
-- [ ] API REST.
-- [ ] Usuarios y Roles.
+Logros:
 
----
+- [x] Definir el producto.
+- [x] Arquitectura funcional.
+- [x] Módulos del sistema.
+- [x] Casos de uso.
+- [x] Modelo de negocio.
+- [x] Requisitos funcionales.
+- [x] Requisitos no funcionales.
+- [x] Diseño UI/UX.
+- [x] Arquitectura API REST.
+- [x] Arquitectura de Base de Datos.
+- [x] Diccionario de Datos.
+- [x] Modelo Lógico.
+- [x] Inicio del DER.
+
+Pendientes del Sprint:
+
+- [ ] Completar DER.
+- [ ] Diseñar el Modelo Físico PostgreSQL.
 
 # Sprint 3
 
