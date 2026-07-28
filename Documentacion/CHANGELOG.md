@@ -16,3 +16,10 @@ Fecha: 13/07/2026
 - Creación de Wiki.
 - Creación de Onboarding.
 - Definición de FerreSys.
+
+## v0.3.0
+
+### Base de Datos
+
+- Se creó oficialmente la base de datos ferresys.
+- Inicio de la implementación física del ERP.
