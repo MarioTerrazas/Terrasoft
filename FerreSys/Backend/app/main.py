@@ -1,6 +1,6 @@
 ﻿from fastapi import FastAPI
 from sqlalchemy import text
-
+from app.api.routes.movimientos_inventario import (router as movimientos_inventario_router,)
 from app.api.routes.almacenes import router as almacenes_router
 from app.api.routes.clientes import router as clientes_router
 from app.api.routes.inventarios import router as inventarios_router
@@ -19,7 +19,7 @@ app.include_router(clientes_router)
 app.include_router(productos_router)
 app.include_router(almacenes_router)
 app.include_router(inventarios_router)
-
+app.include_router(movimientos_inventario_router)
 
 @app.get("/")
 def inicio() -> dict[str, str]:
