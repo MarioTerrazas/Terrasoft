@@ -5,6 +5,7 @@ from app.api.routes.almacenes import router as almacenes_router
 from app.api.routes.clientes import router as clientes_router
 from app.api.routes.inventarios import router as inventarios_router
 from app.api.routes.productos import router as productos_router
+from app.api.routes.usuarios import router as usuarios_router
 from app.core.config import settings
 from app.db.database import engine
 from app.api.routes.auth import router as auth_router
@@ -21,6 +22,7 @@ app.include_router(productos_router)
 app.include_router(almacenes_router)
 app.include_router(inventarios_router)
 app.include_router(movimientos_inventario_router)
+app.include_router(usuarios_router)
 
 @app.get("/")
 def inicio() -> dict[str, str]:
@@ -48,3 +50,4 @@ def database_health_check() -> dict[str, str]:
         "status": "ok",
         "database": database_name,
     }
+
