@@ -7,7 +7,7 @@ from app.api.routes.inventarios import router as inventarios_router
 from app.api.routes.productos import router as productos_router
 from app.core.config import settings
 from app.db.database import engine
-
+from app.api.routes.auth import router as auth_router
 
 app = FastAPI(
     title=settings.app_name,
@@ -15,6 +15,7 @@ app = FastAPI(
     version=settings.app_version,
 )
 
+app.include_router(auth_router)
 app.include_router(clientes_router)
 app.include_router(productos_router)
 app.include_router(almacenes_router)

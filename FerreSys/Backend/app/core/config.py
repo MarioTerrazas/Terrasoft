@@ -7,7 +7,12 @@ class Settings(BaseSettings):
     app_name: str = "FerreSys API"
     app_version: str = "1.0.0"
     app_env: str = "development"
+
     database_url: str
+
+    jwt_secret_key: str
+    jwt_algorithm: str = "HS256"
+    access_token_expire_minutes: int = 60
 
     model_config = SettingsConfigDict(
         env_file=".env",
