@@ -2,6 +2,7 @@
 from sqlalchemy import text
 
 from app.api.routes.clientes import router as clientes_router
+from app.api.routes.productos import router as productos_router
 from app.core.config import settings
 from app.db.database import engine
 
@@ -13,6 +14,7 @@ app = FastAPI(
 )
 
 app.include_router(clientes_router)
+app.include_router(productos_router)
 
 
 @app.get("/")
