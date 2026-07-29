@@ -14,7 +14,6 @@ class MovimientoInventarioCrear(BaseModel):
     )
     motivo: str | None = Field(default=None, max_length=255)
     observaciones: str | None = None
-    id_usuario: int = Field(gt=0)
 
 
 class MovimientoInventarioRespuesta(BaseModel):

@@ -3,7 +3,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-
+from app.api.deps import obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.models.inventario import Inventario
@@ -20,6 +20,7 @@ from app.schemas.movimiento_inventario import (
 router = APIRouter(
     prefix="/movimientos-inventario",
     tags=["Movimientos de inventario"],
+    dependencies=[Depends(obtener_usuario_actual)],
 )
 
 
@@ -120,6 +121,7 @@ def listar_tipos_movimiento(
 def registrar_movimiento(
     datos: MovimientoInventarioCrear,
     db: Session = Depends(get_db),
+    usuario_actual: Usuario = Depends(obtener_usuario_actual),
 ) -> MovimientoInventarioRespuesta:
     consulta_inventario = (
         select(Inventario)
@@ -147,15 +149,7 @@ def registrar_movimiento(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Tipo de movimiento no encontrado o inactivo",
         )
-
-    usuario = db.get(Usuario, datos.id_usuario)
-
-    if usuario is None or not usuario.estado:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Usuario no encontrado o inactivo",
-        )
-
+    usuario = usuario_actual
     producto = db.get(Producto, inventario.id_producto)
     almacen = db.get(Almacen, inventario.id_almacen)
 
@@ -183,7 +177,8 @@ def registrar_movimiento(
         inventario.stock_actual -= datos.cantidad
 
     movimiento = MovimientoInventario(
-        **datos.model_dump()
+    **datos.model_dump(),
+    id_usuario=usuario_actual.id_usuario,
     )
 
     db.add(movimiento)

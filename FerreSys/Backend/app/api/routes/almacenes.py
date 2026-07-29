@@ -1,7 +1,7 @@
 ﻿from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
-
+from app.api.deps import obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.schemas.almacen import (
@@ -14,6 +14,7 @@ from app.schemas.almacen import (
 router = APIRouter(
     prefix="/almacenes",
     tags=["Almacenes"],
+    dependencies=[Depends(obtener_usuario_actual)],
 )
 
 

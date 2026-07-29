@@ -1,7 +1,7 @@
 ﻿from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-
+from app.api.deps import obtener_usuario_actual
 from app.db.session import get_db
 from app.models.cliente import Cliente
 from app.schemas.cliente import (
@@ -13,8 +13,8 @@ from app.schemas.cliente import (
 router = APIRouter(
     prefix="/clientes",
     tags=["Clientes"],
+    dependencies=[Depends(obtener_usuario_actual)],
 )
-
 
 @router.post(
     "",

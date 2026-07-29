@@ -2,7 +2,7 @@
 from sqlalchemy import or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
-
+from app.api.deps import obtener_usuario_actual
 from app.db.session import get_db
 from app.models.producto import Producto
 from app.schemas.producto import (
@@ -14,6 +14,7 @@ from app.schemas.producto import (
 router = APIRouter(
     prefix="/productos",
     tags=["Productos"],
+    dependencies=[Depends(obtener_usuario_actual)],
 )
 
 

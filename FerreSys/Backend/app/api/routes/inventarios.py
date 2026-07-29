@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
-
+from app.api.deps import obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.models.inventario import Inventario
@@ -19,6 +19,7 @@ from app.schemas.inventario import (
 router = APIRouter(
     prefix="/inventarios",
     tags=["Inventario"],
+    dependencies=[Depends(obtener_usuario_actual)],
 )
 
 
