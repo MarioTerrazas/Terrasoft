@@ -1,7 +1,7 @@
-﻿from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from app.api.deps import obtener_usuario_actual
+from app.api.deps import exigir_roles, obtener_usuario_actual
 from app.db.session import get_db
 from app.models.cliente import Cliente
 from app.schemas.cliente import (
@@ -24,6 +24,9 @@ router = APIRouter(
 def crear_cliente(
     datos: ClienteCrear,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Cliente:
     cliente = Cliente(**datos.model_dump())
 
@@ -44,6 +47,13 @@ def listar_clientes(
     solo_activos: bool = True,
     limite: int = Query(default=50, ge=1, le=200),
     desplazamiento: int = Query(default=0, ge=0),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+        )
+    ),
 ) -> list[Cliente]:
     consulta = select(Cliente)
 
@@ -76,6 +86,13 @@ def listar_clientes(
 def obtener_cliente(
     id_cliente: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+        )
+    ),
 ) -> Cliente:
     cliente = db.get(Cliente, id_cliente)
 
@@ -96,6 +113,9 @@ def actualizar_cliente(
     id_cliente: int,
     datos: ClienteActualizar,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Cliente:
     cliente = db.get(Cliente, id_cliente)
 
@@ -123,6 +143,9 @@ def actualizar_cliente(
 def eliminar_cliente(
     id_cliente: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Cliente:
     cliente = db.get(Cliente, id_cliente)
 
@@ -138,3 +161,4 @@ def eliminar_cliente(
     db.refresh(cliente)
 
     return cliente
+

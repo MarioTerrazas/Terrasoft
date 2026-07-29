@@ -1,9 +1,9 @@
-﻿from decimal import Decimal
+from decimal import Decimal
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from app.api.deps import obtener_usuario_actual
+from app.api.deps import exigir_roles, obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.models.inventario import Inventario
@@ -95,6 +95,9 @@ def construir_respuesta(
 )
 def listar_tipos_movimiento(
     db: Session = Depends(get_db),
+    _usuario_actual: Usuario = Depends(
+        exigir_roles("ADMINISTRADOR", "ALMACENERO")
+    ),
 ) -> list[dict[str, object]]:
     tipos = db.scalars(
         select(TipoMovimiento)
@@ -121,7 +124,9 @@ def listar_tipos_movimiento(
 def registrar_movimiento(
     datos: MovimientoInventarioCrear,
     db: Session = Depends(get_db),
-    usuario_actual: Usuario = Depends(obtener_usuario_actual),
+    usuario_actual: Usuario = Depends(
+        exigir_roles("ADMINISTRADOR", "ALMACENERO")
+    ),
 ) -> MovimientoInventarioRespuesta:
     consulta_inventario = (
         select(Inventario)
@@ -207,6 +212,9 @@ def listar_movimientos(
     id_inventario: int | None = Query(default=None, gt=0),
     limite: int = Query(default=50, ge=1, le=200),
     desplazamiento: int = Query(default=0, ge=0),
+    _usuario_actual: Usuario = Depends(
+        exigir_roles("ADMINISTRADOR", "ALMACENERO")
+    ),
 ) -> list[dict[str, object]]:
     consulta = (
         select(

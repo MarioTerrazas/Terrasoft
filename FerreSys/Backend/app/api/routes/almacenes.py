@@ -1,7 +1,7 @@
-﻿from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
-from app.api.deps import obtener_usuario_actual
+from app.api.deps import exigir_roles, obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.schemas.almacen import (
@@ -26,6 +26,9 @@ router = APIRouter(
 def crear_almacen(
     datos: AlmacenCrear,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR")
+    ),
 ) -> Almacen:
     almacen = Almacen(**datos.model_dump())
 
@@ -55,6 +58,14 @@ def listar_almacenes(
     desplazamiento: int = Query(
         default=0,
         ge=0,
+    ),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+            "CHOFER",
+        )
     ),
 ) -> list[Almacen]:
     consulta = select(Almacen)
@@ -93,6 +104,14 @@ def listar_almacenes(
 def obtener_almacen(
     id_almacen: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+            "CHOFER",
+        )
+    ),
 ) -> Almacen:
     almacen = db.get(Almacen, id_almacen)
 
@@ -113,6 +132,9 @@ def actualizar_almacen(
     id_almacen: int,
     datos: AlmacenActualizar,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR")
+    ),
 ) -> Almacen:
     almacen = db.get(Almacen, id_almacen)
 
@@ -140,6 +162,9 @@ def actualizar_almacen(
 def eliminar_almacen(
     id_almacen: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR")
+    ),
 ) -> Almacen:
     almacen = db.get(Almacen, id_almacen)
 
@@ -155,3 +180,4 @@ def eliminar_almacen(
     db.refresh(almacen)
 
     return almacen
+

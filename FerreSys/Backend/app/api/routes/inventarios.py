@@ -1,10 +1,10 @@
-﻿from decimal import Decimal
+from decimal import Decimal
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
-from app.api.deps import obtener_usuario_actual
+from app.api.deps import exigir_roles, obtener_usuario_actual
 from app.db.session import get_db
 from app.models.almacen import Almacen
 from app.models.inventario import Inventario
@@ -58,6 +58,9 @@ def construir_respuesta(
 def crear_inventario(
     datos: InventarioCrear,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+    exigir_roles("ADMINISTRADOR", "ALMACENERO")
+    ),
 ) -> InventarioRespuesta:
     producto = db.get(Producto, datos.id_producto)
 
@@ -123,6 +126,14 @@ def listar_inventarios(
     solo_bajo_stock: bool = False,
     limite: int = Query(default=50, ge=1, le=200),
     desplazamiento: int = Query(default=0, ge=0),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+            "CHOFER",
+        )
+    ),
 ) -> list[InventarioRespuesta]:
     consulta = (
         select(Inventario, Producto, Almacen)
@@ -181,6 +192,14 @@ def listar_inventarios(
 def obtener_inventario(
     id_inventario: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+    exigir_roles(
+        "ADMINISTRADOR",
+        "VENDEDOR",
+        "ALMACENERO",
+        "CHOFER",
+    )
+    ),
 ) -> InventarioRespuesta:
     consulta = (
         select(Inventario, Producto, Almacen)
@@ -220,6 +239,9 @@ def actualizar_inventario(
     id_inventario: int,
     datos: InventarioActualizar,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+    exigir_roles("ADMINISTRADOR", "ALMACENERO")
+    ),
 ) -> InventarioRespuesta:
     inventario = db.get(Inventario, id_inventario)
 
@@ -259,3 +281,4 @@ def actualizar_inventario(
         producto,
         almacen,
     )
+

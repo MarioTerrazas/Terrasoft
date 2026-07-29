@@ -1,8 +1,8 @@
-﻿from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
-from app.api.deps import obtener_usuario_actual
+from app.api.deps import exigir_roles, obtener_usuario_actual
 from app.db.session import get_db
 from app.models.producto import Producto
 from app.schemas.producto import (
@@ -26,6 +26,9 @@ router = APIRouter(
 def crear_producto(
     datos: ProductoCrear,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Producto:
     producto = Producto(**datos.model_dump())
     db.add(producto)
@@ -53,6 +56,14 @@ def listar_productos(
     solo_activos: bool = True,
     limite: int = Query(default=50, ge=1, le=200),
     desplazamiento: int = Query(default=0, ge=0),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+            "CHOFER",
+        )
+    ),
 ) -> list[Producto]:
     consulta = select(Producto)
 
@@ -85,6 +96,14 @@ def listar_productos(
 def obtener_producto(
     id_producto: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles(
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO",
+            "CHOFER",
+        )
+    ),
 ) -> Producto:
     producto = db.get(Producto, id_producto)
 
@@ -105,6 +124,9 @@ def actualizar_producto(
     id_producto: int,
     datos: ProductoActualizar,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Producto:
     producto = db.get(Producto, id_producto)
 
@@ -154,6 +176,9 @@ def actualizar_producto(
 def eliminar_producto(
     id_producto: int,
     db: Session = Depends(get_db),
+    _usuario_actual=Depends(
+        exigir_roles("ADMINISTRADOR", "VENDEDOR")
+    ),
 ) -> Producto:
     producto = db.get(Producto, id_producto)
 
@@ -168,3 +193,4 @@ def eliminar_producto(
     db.refresh(producto)
 
     return producto
+

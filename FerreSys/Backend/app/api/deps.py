@@ -1,4 +1,6 @@
-﻿import jwt
+﻿from collections.abc import Callable
+
+import jwt
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from jwt.exceptions import InvalidTokenError
@@ -6,6 +8,7 @@ from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.db.session import get_db
+from app.models.rol import Rol
 from app.models.usuario import Usuario
 
 
@@ -53,3 +56,31 @@ def obtener_usuario_actual(
         )
 
     return usuario
+
+
+def exigir_roles(
+    *roles_permitidos: str,
+) -> Callable:
+    def verificar_rol(
+        usuario_actual: Usuario = Depends(obtener_usuario_actual),
+        db: Session = Depends(get_db),
+    ) -> Usuario:
+        rol = db.get(Rol, usuario_actual.id_rol)
+
+        if rol is None or not rol.estado:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="El rol del usuario no existe o está inactivo",
+            )
+
+        if rol.nombre not in roles_permitidos:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail=(
+                    "No tienes permiso para realizar esta operación"
+                ),
+            )
+
+        return usuario_actual
+
+    return verificar_rol
