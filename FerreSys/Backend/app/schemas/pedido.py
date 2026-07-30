@@ -24,6 +24,7 @@ class DetallePedidoCrear(BaseModel):
 
 class PedidoCrear(BaseModel):
     id_cliente: int = Field(gt=0)
+    id_almacen: int = Field(gt=0)
 
     descuento: Decimal = Field(
         default=0,
@@ -79,6 +80,9 @@ class PedidoRespuesta(BaseModel):
 
     id_cliente: int
     cliente_nombre: str
+
+    id_almacen: int
+    almacen_nombre: str
 
     fecha: datetime
     estado: str

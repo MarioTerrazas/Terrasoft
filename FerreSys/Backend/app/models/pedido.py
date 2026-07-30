@@ -17,6 +17,11 @@ class Pedido(Base):
         nullable=False,
     )
 
+    id_almacen: Mapped[int] = mapped_column(
+        ForeignKey("almacen.id_almacen"),
+        nullable=False,
+    )
+
     numero_pedido: Mapped[str] = mapped_column(
         String(30),
         nullable=False,
