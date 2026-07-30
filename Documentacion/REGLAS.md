@@ -172,13 +172,13 @@ El diccionario de datos.
 El modelo lógico.
 El DER.
 
-Después podrá implementarse en PostgreSQL.
+Después deberá implementarse mediante migraciones versionadas en PostgreSQL.
 
 Regla 16 — El DER es el documento maestro del modelo de datos
 
 El archivo oficial editable será:
 
-FerreSys/Diagramas/DER.drawio
+FerreSys/Diagramas/DER.v1.drawio
 
 El archivo:
 
@@ -367,7 +367,7 @@ Regla 33 — Los archivos generados no reemplazan a los editables
 
 Ejemplos:
 
-DER.drawio es el archivo maestro.
+DER.v1.drawio es el archivo maestro.
 DER.png es una exportación.
 El código fuente es el archivo maestro.
 Los ejecutables son resultados derivados.
@@ -502,12 +502,3 @@ git add .
 git commit -m "Documentación - Consolida las reglas oficiales de Terrasoft"
 git push
 git status
-
-También corrige en tu ROADMAP.md estas dos líneas, porque el DER ya está terminado:
-
-- [x] Completar DER.
-- [ ] Diseñar el Modelo Físico PostgreSQL.
-
-Y puedes agregar:
-
-- [x] Crear la base de datos PostgreSQL.

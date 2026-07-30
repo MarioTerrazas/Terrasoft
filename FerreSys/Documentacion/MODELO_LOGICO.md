@@ -12,7 +12,7 @@
 
 # Objetivo
 
-Definir las relaciones entre las entidades del sistema antes de construir la base de datos física.
+Documentar las relaciones entre las entidades implementadas en la base de datos física.
 
 Este documento representa el puente entre el análisis del negocio y PostgreSQL.
 
@@ -348,4 +348,26 @@ Todo movimiento de inventario deberá estar asociado a una causa.
 
 # Objetivo final
 
-El modelo lógico será utilizado para construir el modelo físico de PostgreSQL.
+El modelo lógico fue utilizado para construir el modelo físico de PostgreSQL y continúa siendo una referencia de arquitectura.
+---
+
+## Implementación del modelo lógico
+
+El modelo lógico de FerreSys ya fue traducido a PostgreSQL.
+
+Su implementación actual incluye:
+
+- entidades principales;
+- relaciones;
+- claves primarias y foráneas;
+- restricciones;
+- índices;
+- catálogos iniciales;
+- inventario por almacén;
+- pedidos y detalles;
+- movimientos de inventario;
+- relación entre pedido y almacén.
+
+La implementación física deberá permanecer alineada con el archivo maestro:
+
+`C:\Terrasoft\FerreSys\Diagramas\DER.v1.drawio`

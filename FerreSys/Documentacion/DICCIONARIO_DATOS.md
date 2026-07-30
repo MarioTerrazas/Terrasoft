@@ -9,7 +9,7 @@
 
 # Objetivo
 
-Definir el significado de cada entidad del sistema antes de construir la base de datos física en PostgreSQL.
+Documentar el significado de cada entidad implementada en la base de datos física PostgreSQL.
 
 Cada entidad representa un concepto del negocio.
 
@@ -483,3 +483,26 @@ Informar situaciones relevantes.
 Toda nueva entidad deberá incorporarse primero a este documento antes de ser implementada en la base de datos.
 
 Este documento será la referencia oficial para el diseño del modelo lógico y físico de FerreSys.
+---
+
+## Estado actual del diccionario
+
+El diccionario sirvió como base para construir el modelo físico de FerreSys en PostgreSQL.
+
+Actualmente debe mantenerse sincronizado con:
+
+- `DER.v1.drawio`;
+- las migraciones SQL;
+- los modelos SQLAlchemy;
+- los esquemas Pydantic;
+- los endpoints de FastAPI.
+
+La migración más reciente agregó `id_almacen` a la tabla `pedido`.
+
+Antes de agregar o modificar una columna, deberá actualizarse:
+
+1. el DER;
+2. el diccionario de datos;
+3. la migración correspondiente;
+4. el modelo SQLAlchemy;
+5. los esquemas y endpoints afectados.

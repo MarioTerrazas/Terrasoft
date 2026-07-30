@@ -6,7 +6,7 @@
 
 **Proyecto:** FerreSys
 
-**Sprint:** Sprint 2 — Arquitectura de FerreSys
+**Sprint:** Sprint 2 completado — Implementación continuada en Sprint 3
 
 ---
 
@@ -295,7 +295,7 @@ La base de datos deberá permitir incorporar nuevos módulos sin modificar la es
 
 # Compatibilidad
 
-La implementación oficial será realizada en PostgreSQL.
+La implementación oficial fue realizada en PostgreSQL 17 y actualmente está operativa.
 
 El diseño deberá evitar características específicas que dificulten futuras migraciones.
 
@@ -304,3 +304,46 @@ El diseño deberá evitar características específicas que dificulten futuras m
 # Objetivo final
 
 Construir una base de datos robusta, organizada y preparada para acompañar el crecimiento de FerreSys durante muchos años.
+---
+
+## Estado de implementación
+
+La base de datos física de FerreSys está implementada y operativa en PostgreSQL 17.
+
+### Componentes implementados
+
+- base de datos `ferresys`;
+- diez tablas principales;
+- claves primarias;
+- claves foráneas;
+- restricciones;
+- índices;
+- roles iniciales;
+- tipos de movimiento;
+- datos semilla;
+- codificación UTF-8;
+- conexión con FastAPI mediante SQLAlchemy y psycopg.
+
+### Migraciones ejecutadas
+
+- `001_schema_inicial.sql`;
+- `002_constraints.sql`;
+- `003_indexes.sql`;
+- `004_pedido_almacen.sql`.
+
+### Tablas actuales
+
+- rol;
+- usuario;
+- cliente;
+- producto;
+- almacen;
+- inventario;
+- tipo_movimiento;
+- movimiento_inventario;
+- pedido;
+- detalle_pedido.
+
+### Regla vigente
+
+Todo cambio futuro del modelo físico deberá realizarse mediante una migración versionada y registrarse en Git.

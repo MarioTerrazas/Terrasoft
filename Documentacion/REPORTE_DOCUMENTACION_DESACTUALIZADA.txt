@@ -1,0 +1,556 @@
+﻿ARCHIVO: C:\Terrasoft\Documentacion\INSTALACION.md
+LÍNEA:   9
+TEXTO:   - ## PostgreSQL 17
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\INSTALACION.md
+LÍNEA:   14
+TEXTO:   winget install --id PostgreSQL.PostgreSQL.17 --exact
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\INSTALACION.md
+LÍNEA:   20
+TEXTO:   C:\Program Files\PostgreSQL\17
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\INSTALACION.md
+LÍNEA:   26
+TEXTO:   C:\Program Files\PostgreSQL\17\bin
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\NVESTIGACION_MERCADO.md
+LÍNEA:   62
+TEXTO:   ## Investigación pendiente
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   111
+TEXTO:   Sprint 2 - Aprueba DER v1.0 de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   127
+TEXTO:   Pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   173
+TEXTO:   El DER.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   175
+TEXTO:   Después podrá implementarse en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   177
+TEXTO:   Regla 16 — El DER es el documento maestro del modelo de datos
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   181
+TEXTO:   FerreSys/Diagramas/DER.drawio
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   185
+TEXTO:   FerreSys/Diagramas/DER.png
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   356
+TEXTO:   Backend.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   370
+TEXTO:   DER.drawio es el archivo maestro.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   371
+TEXTO:   DER.png es una exportación.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   447
+TEXTO:   ROADMAP.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   448
+TEXTO:   CHANGELOG.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   506
+TEXTO:   También corrige en tu ROADMAP.md estas dos líneas, porque el DER ya está terminado:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   508
+TEXTO:   - [x] Completar DER.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   509
+TEXTO:   - [ ] Diseñar el Modelo Físico PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\REGLAS.md
+LÍNEA:   513
+TEXTO:   - [x] Crear la base de datos PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   1
+TEXTO:   # ROADMAP
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   52
+TEXTO:   - [x] Definir reglas para que TerrasoftAI revise el DER, migraciones, reglas y diario antes de proponer código.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   60
+TEXTO:   # Sprint 2 - Arquitectura y Base de Datos de FerreSys ✅
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   64
+TEXTO:   Diseñar FerreSys antes del desarrollo y construir su base de datos inicial en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   80
+TEXTO:   - [x] Completar el DER versión 1.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   81
+TEXTO:   - [x] Diseñar el modelo físico PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   110
+TEXTO:   # Sprint 3 - Backend con FastAPI 🚧
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   116
+TEXTO:   ## Infraestructura Backend
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   119
+TEXTO:   - [x] Instalar FastAPI.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   122
+TEXTO:   - [x] Configurar PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   222
+TEXTO:   - [x] Implementar estado PENDIENTE.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   236
+TEXTO:   ## Pendientes del Sprint 3
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   320
+TEXTO:   Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   347
+TEXTO:   - [ ] Gestionar compras pendientes y recibidas.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   356
+TEXTO:   - [ ] Calcular saldo pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   373
+TEXTO:   Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   408
+TEXTO:   - [ ] Mostrar entregas pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   434
+TEXTO:   Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   462
+TEXTO:   Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   491
+TEXTO:   Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Documentacion\ROADMAP.md
+LÍNEA:   514
+TEXTO:   # Regla del Roadmap
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\API.md
+LÍNEA:   9
+TEXTO:   **Sprint:** Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\API.md
+LÍNEA:   17
+TEXTO:   La API será desarrollada con FastAPI y permitirá la comunicación entre el Frontend, la Base de Datos y futuras integraciones.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\API.md
+LÍNEA:   27
+TEXTO:   FastAPI
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\API.md
+LÍNEA:   35
+TEXTO:   PostgreSQL
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\ARQUITECTURA_FUNCIONAL.md
+LÍNEA:   44
+TEXTO:   - Pedidos pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\ARQUITECTURA_FUNCIONAL.md
+LÍNEA:   48
+TEXTO:   - Facturas pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\BASE_DATOS.md
+LÍNEA:   9
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\BASE_DATOS.md
+LÍNEA:   298
+TEXTO:   La implementación oficial será realizada en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CASOS_DE_USO.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   1
+TEXTO:   # CHANGELOG
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   7
+TEXTO:   # v0.1.0
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   9
+TEXTO:   ## Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   34
+TEXTO:   Pendiente:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   36
+TEXTO:   - Diagrama Entidad-Relación (DER).
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   37
+TEXTO:   - Modelo físico PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\CHANGELOG.md
+LÍNEA:   38
+TEXTO:   - Backend FastAPI.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\DICCIONARIO_DATOS.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\DICCIONARIO_DATOS.md
+LÍNEA:   12
+TEXTO:   Definir el significado de cada entidad del sistema antes de construir la base de datos física en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODELO_LOGICO.md
+LÍNEA:   9
+TEXTO:   **Sprint:** Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODELO_LOGICO.md
+LÍNEA:   17
+TEXTO:   Este documento representa el puente entre el análisis del negocio y PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODELO_LOGICO.md
+LÍNEA:   351
+TEXTO:   El modelo lógico será utilizado para construir el modelo físico de PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   39
+TEXTO:   - Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   57
+TEXTO:   - Pedidos pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   62
+TEXTO:   - Facturas pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   145
+TEXTO:   - Saldos pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   302
+TEXTO:   - Pedidos pendientes y entregados.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\MODULOS.md
+LÍNEA:   306
+TEXTO:   - Facturas emitidas, pendientes o anuladas.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\PEDIDOS.md
+LÍNEA:   102
+TEXTO:   Pendiente
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\PRODUCTO.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   134
+TEXTO:   - Pedidos pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   139
+TEXTO:   - Facturas pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   291
+TEXTO:   - Saldo pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   335
+TEXTO:   - Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   345
+TEXTO:   ## RF-039 — Modificar pedidos pendientes
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   471
+TEXTO:   El sistema permitirá registrar compras pendientes de pago.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   540
+TEXTO:   - Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_FUNCIONALES.md
+LÍNEA:   586
+TEXTO:   - Pendiente.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\REQUISITOS_NO_FUNCIONALES.md
+LÍNEA:   6
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\UI_UX.md
+LÍNEA:   9
+TEXTO:   **Sprint:** Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\FerreSys\Documentacion\UI_UX.md
+LÍNEA:   78
+TEXTO:   - Pedidos pendientes.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   9
+TEXTO:   Continuar el Sprint 3 y completar la integración entre:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   27
+TEXTO:   ### 1. Backend base
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   29
+TEXTO:   Se confirmó el funcionamiento del backend con:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   32
+TEXTO:   - FastAPI;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   35
+TEXTO:   - PostgreSQL 17;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   272
+TEXTO:   - PENDIENTE → CONFIRMADO;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   273
+TEXTO:   - PENDIENTE → CANCELADO;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   291
+TEXTO:   #### PENDIENTE
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   347
+TEXTO:   7. Los precios se obtienen desde PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   354
+TEXTO:   ## Estado del Sprint 3
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\Knowledge\Diario\2026-07-30.md
+LÍNEA:   356
+TEXTO:   El Sprint 3 está muy avanzado.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\README.md
+LÍNEA:   34
+TEXTO:   - FastAPI
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\README.md
+LÍNEA:   36
+TEXTO:   - PostgreSQL
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-12.md
+LÍNEA:   16
+TEXTO:   Iniciar Sprint 2 - Arquitectura de FerreSys.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   3
+TEXTO:   ## Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   11
+TEXTO:   - CHANGELOG.md
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   13
+TEXTO:   Se inició el diseño del primer Diagrama Entidad-Relación (DER).
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   15
+TEXTO:   ### DER v0.1
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   28
+TEXTO:   El archivo editable del DER fue almacenado en:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   32
+TEXTO:   └── DER.drawio
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   38
+TEXTO:   └── DER.png
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   42
+TEXTO:   Continuar el DER incorporando:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-13.md
+LÍNEA:   58
+TEXTO:   Una vez aprobado el DER, iniciar la implementación del modelo físico en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   4
+TEXTO:   **Sprint:** Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   17
+TEXTO:   - Se abrió y continuó el archivo `DER.drawio`.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   28
+TEXTO:   - Se aprobó el DER v1.0 para comenzar PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   64
+TEXTO:   - `DER.drawio` será el archivo editable oficial.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   65
+TEXTO:   - `DER.png` será una exportación para documentación.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   66
+TEXTO:   - Ninguna tabla deberá implementarse en PostgreSQL sin estar aprobada previamente en el DER.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   83
+TEXTO:   El DER v1.0 de FerreSys quedó aprobado para implementación.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   89
+TEXTO:   Traducir el DER a PostgreSQL mediante:
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-14.md
+LÍNEA:   110
+TEXTO:   PostgreSQL 17
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   23
+TEXTO:   ### Backend
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   26
+TEXTO:   - FastAPI
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   29
+TEXTO:   - PostgreSQL 17
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   81
+TEXTO:   20. Antes de crear una nueva tabla, verificar si forma parte del DER y del roadmap.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   104
+TEXTO:   PENDIENTE
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   115
+TEXTO:   ### PENDIENTE
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   175
+TEXTO:   - el DER vigente;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Diario\2026-07-30-FerreSys.md
+LÍNEA:   178
+TEXTO:   - el estado actual del backend;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-00-Fundacion.md
+LÍNEA:   53
+TEXTO:   - ROADMAP.md
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-00-Fundacion.md
+LÍNEA:   59
+TEXTO:   - CHANGELOG.md
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-01-Nacimiento-TerrasoftAI.md
+LÍNEA:   134
+TEXTO:   - ROADMAP.md
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-01-Nacimiento-TerrasoftAI.md
+LÍNEA:   142
+TEXTO:   - CHANGELOG.md
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-01-Nacimiento-TerrasoftAI.md
+LÍNEA:   178
+TEXTO:   El proyecto queda preparado para iniciar el Sprint 2.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-01-Nacimiento-TerrasoftAI.md
+LÍNEA:   184
+TEXTO:   Sprint 2
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-02-Arquitectura-FerreSys.md
+LÍNEA:   1
+TEXTO:   # Sprint 2 — Arquitectura de FerreSys
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-02-Arquitectura-FerreSys.md
+LÍNEA:   28
+TEXTO:   - Diseño y aprobación del DER v1.0.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-02-Arquitectura-FerreSys.md
+LÍNEA:   36
+TEXTO:   El Sprint continúa abierto hasta implementar y validar el modelo físico en PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Knowledge\Sprints\Sprint-02-Arquitectura-FerreSys.md
+LÍNEA:   42
+TEXTO:   Modelo físico de PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Memory\ESTADO_ACTUAL_FERRESYS.md
+LÍNEA:   7
+TEXTO:   Sprint 3 — Backend.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Memory\ESTADO_ACTUAL_FERRESYS.md
+LÍNEA:   11
+TEXTO:   El backend de FerreSys funciona con FastAPI y PostgreSQL.
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Memory\ESTADO_ACTUAL_FERRESYS.md
+LÍNEA:   15
+TEXTO:   - base de datos PostgreSQL;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Memory\ESTADO_ACTUAL_FERRESYS.md
+LÍNEA:   16
+TEXTO:   - DER v1;
+------------------------------------------------------------
+ARCHIVO: C:\Terrasoft\TerrasoftAI\Memory\ESTADO_ACTUAL_FERRESYS.md
+LÍNEA:   68
+TEXTO:   - credenciales de PostgreSQL.
+------------------------------------------------------------
